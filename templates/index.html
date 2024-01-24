@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>Image Processing</title>
+        <style>
+        body {
+          background-image: url('static/bg6.gif');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+    </style>
+</head>
+<body>
+   <div class="header">
+       <img src="../static/polyp3.jpeg" alt="Logo" class="logo">
+       <h1>Polyp Detector</h1>
+   </div>
+   <div class="container">
+       <div class="form-container">
+              <!-- The form that will be used to upload the image -->
+           <form action="/img" method="post" enctype="multipart/form-data">
+               <fieldset>
+                   <label>Upload Image</label><br>
+                   <h2>Select a file:</h2><br>
+                   <input type="file" id="fileInput" name="fileInput"><br><br>
+                   <input type="submit" value="Submit">
+               </fieldset>
+           </form>
+       </div>
+       <div class="image-container">
+           <!-- Display the image from YOLO -->
+            {% if results %}
+                <img src="{{ results }}" alt="Image Path Not Found" class="custom-image">
+            {% endif %}
+       </div>
+   </div>
+</body>
+</html>
