@@ -9,5 +9,5 @@
 <h2>Our Research Poster</h2>
 <img width="639" alt="image" src="https://github.com/fvazqu/polypdetector/assets/63169963/4bd3c1d4-f6a7-4c71-a65e-716664795b40"><br>
 [PolypDetector_Poster.pptx.pdf](https://github.com/fvazqu/polypdetector/files/14543329/PolypDetector_Poster.pptx.pdf)
-<h2>Awknowledgements</h2>
+<h2>Acknowledgements</h2>
 <p>We would like to thank the UTRGV Computer Science Department for supporting our Project, our research advisor for his guidance, and all those who have helped us continue advancing research in polyp detection.</p>
