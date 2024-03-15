@@ -23,10 +23,10 @@ h1 {
 .logo {
     border-radius: 70%; /* This creates a circular shape using a border-radius of 50% */
     object-fit: cover; /* Optional: ensures the image fills the circular space without stretching */
-    margin-left: 100px;
+    margin-left: 10vw;
     max-width: 50px; /* Adjust the width of the logo as needed */
     height: auto; /* Adjust the height of the logo as needed */
-    margin-right: 10px; /* Add margin for spacing between logo and title */
+    margin-right: 1vw; /* Add margin for spacing between logo and title */
 }
 h2, p {
     margin: 0 auto;
@@ -68,9 +68,11 @@ input[type="submit"] {
     padding-left: 1rem;
 }
 .container {
+    position: relative;
     display: flex;
     align-items: center; /* Vertically center items */
     justify-content: center; /* Horizontally center items */
+    color: black;
 }
 .form-container {
     width: 50%; /* Adjust as needed */
@@ -85,6 +87,7 @@ input[type="submit"] {
     display: flex;
     justify-content: left;
     align-items: center;
+    color: white;
 }
 /* Adjust image styles if needed */
 .image-container img {
@@ -100,4 +103,35 @@ input[type="submit"] {
     margin-left: calc(12% - (12% * 0.12));
     text-align: left;
 }
-/*input[type]*/
+.sb {
+    color: black;
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .sb {
+        color: black;
+    }
+    label {
+        font-size: 30px; /* Adjust as needed for smaller screens */
+    }
+    .logo {
+        max-width: 30px; /* Adjust the width of the logo as needed */
+        height: auto; /* Adjust the height of the logo as needed */
+    }
+    .child {
+        position: absolute
+    }
+    .form-container {
+        width: 100%; /* Adjust as needed */
+        padding: 1vw;
+        top: 0;
+    }
+    .image-container {
+        left: 0;
+        top: 300px;
+        width: 100%; /* Adjust as needed */
+        padding: 1vw;
+        justify-content: center;
+        color: white;
+    }
+}
